@@ -28,11 +28,16 @@
             //for (int i = 0; i < 10; i++)
             //    Console.WriteLine("Запомни: всего одна ошибка и ты ошибся.");
             //6
-            int n = int.Parse(Console.ReadLine());
+            //int n = int.Parse(Console.ReadLine());
 
-            for (int i = 0; i <= n; i++)
-                Console.WriteLine($"Квадрат числа {i} равен {i * i}");
+            //for (int i = 0; i <= n; i++)
+            //    Console.WriteLine($"Квадрат числа {i} равен {i * i}");
+            //7
+            string text = Console.ReadLine();
+            int count = int.Parse(Console.ReadLine());
 
+            for (int i = 0; i < count; i++)
+                Console.WriteLine(text);
         }
         //static void CheckCancel(OrderStatus status)
         //{
