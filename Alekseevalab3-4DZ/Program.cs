@@ -19,8 +19,11 @@
             //CheckCancel(OrderStatus.Shipped);
             //CheckCancel(OrderStatus.Delivered);
             //3
-            for (int i = 10; i >= 1; i--)
-                Console.WriteLine(i);
+            //for (int i = 10; i >= 1; i--)
+            //    Console.WriteLine(i);
+            //4
+            for (int i = 1; i <= 10; i++)
+                Console.WriteLine($"5 × {i} = {5 * i}");
         }
         //static void CheckCancel(OrderStatus status)
         //{
