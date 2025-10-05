@@ -93,13 +93,21 @@
             //    Console.WriteLine($"{even} четных и {odd} нечетных");
             //}
             //5
-            int[] times = { 120, 95, 110, 105, 100 };
-            int min = times[0];
+            //int[] times = { 120, 95, 110, 105, 100 };
+            //int min = times[0];
 
-            foreach (int t in times)
-                if (t < min) min = t;
+            //foreach (int t in times)
+            //    if (t < min) min = t;
 
-            Console.WriteLine($"Самое быстрое время: {min} секунд");
+            //Console.WriteLine($"Самое быстрое время: {min} секунд");
+            //6
+            string[] results = { "win", "loss", "win", "win", "loss" };
+            int wins = 0, losses = 0;
+
+            foreach (string result in results)
+                if (result == "win") wins++; else losses++;
+
+            Console.WriteLine($"{wins} победы и {losses} поражения");
         }
             //static void CheckCancel(OrderStatus status)
             //{
