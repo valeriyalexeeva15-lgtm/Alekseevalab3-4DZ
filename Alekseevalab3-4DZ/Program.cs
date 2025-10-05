@@ -33,11 +33,21 @@
             //for (int i = 0; i <= n; i++)
             //    Console.WriteLine($"Квадрат числа {i} равен {i * i}");
             //7
-            string text = Console.ReadLine();
-            int count = int.Parse(Console.ReadLine());
+            //string text = Console.ReadLine();
+            //int count = int.Parse(Console.ReadLine());
 
-            for (int i = 0; i < count; i++)
-                Console.WriteLine(text);
+            //for (int i = 0; i < count; i++)
+            //    Console.WriteLine(text);
+            //8
+            for (int i = 0; i < 10; i++)
+            {
+                if (int.Parse(Console.ReadLine()) % 2 != 0)
+                {
+                    Console.WriteLine("NO");
+                    return;
+                }
+            }
+            Console.WriteLine("YES");
         }
         //static void CheckCancel(OrderStatus status)
         //{
