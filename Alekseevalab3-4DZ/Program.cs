@@ -18,7 +18,9 @@
             //CheckCancel(OrderStatus.Processing);
             //CheckCancel(OrderStatus.Shipped);
             //CheckCancel(OrderStatus.Delivered);
-
+            //3
+            for (int i = 10; i >= 1; i--)
+                Console.WriteLine(i);
         }
         //static void CheckCancel(OrderStatus status)
         //{
@@ -27,5 +29,6 @@
         //    else
         //        Console.WriteLine($"Заказ со статусом {status} нельзя отменить");
         //}
+
     }
 }
