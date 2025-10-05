@@ -84,21 +84,30 @@
 
             //Console.WriteLine($"Максимальный элемент: {max}");
             //4
-            int[] numbers = { 1, 2, 3, 4, 5 };
-            int even = 0, odd = 0;
+            //    int[] numbers = { 1, 2, 3, 4, 5 };
+            //    int even = 0, odd = 0;
 
-            foreach (int n in numbers)
-                if (n % 2 == 0) even++; else odd++;
+            //    foreach (int n in numbers)
+            //        if (n % 2 == 0) even++; else odd++;
 
-            Console.WriteLine($"{even} четных и {odd} нечетных");
+            //    Console.WriteLine($"{even} четных и {odd} нечетных");
+            //}
+            //5
+            int[] times = { 120, 95, 110, 105, 100 };
+            int min = times[0];
+
+            foreach (int t in times)
+                if (t < min) min = t;
+
+            Console.WriteLine($"Самое быстрое время: {min} секунд");
         }
-        //static void CheckCancel(OrderStatus status)
-        //{
-        //    if (status == OrderStatus.New || status == OrderStatus.Processing)
-        //        Console.WriteLine($"Заказ со статусом {status} можно отменить");
-        //    else
-        //        Console.WriteLine($"Заказ со статусом {status} нельзя отменить");
-        //}
+            //static void CheckCancel(OrderStatus status)
+            //{
+            //    if (status == OrderStatus.New || status == OrderStatus.Processing)
+            //        Console.WriteLine($"Заказ со статусом {status} можно отменить");
+            //    else
+            //        Console.WriteLine($"Заказ со статусом {status} нельзя отменить");
+            //}
 
-    }
+        }
 }
