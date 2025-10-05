@@ -22,8 +22,11 @@
             //for (int i = 10; i >= 1; i--)
             //    Console.WriteLine(i);
             //4
-            for (int i = 1; i <= 10; i++)
-                Console.WriteLine($"5 * {i} = {5 * i}");
+            //for (int i = 1; i <= 10; i++)
+            //    Console.WriteLine($"5 * {i} = {5 * i}");
+            //5
+            for (int i = 0; i < 10; i++)
+                Console.WriteLine("Запомни: всего одна ошибка и ты ошибся.");
         }
         //static void CheckCancel(OrderStatus status)
         //{
