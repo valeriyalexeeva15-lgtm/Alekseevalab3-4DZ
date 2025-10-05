@@ -73,8 +73,16 @@
             //foreach (string item in items)
             //    Console.WriteLine(item);
             //2
-            int[] points = { 10, 20, 15, 30, 25 };
-            Console.WriteLine($"Общее количество очков: {points.Sum()}");
+            //int[] points = { 10, 20, 15, 30, 25 };
+            //Console.WriteLine($"Общее количество очков: {points.Sum()}");
+            //3
+            int[] numbers = { 1, 3, 7, 2, 5 };
+            int max = numbers[0];
+
+            foreach (int n in numbers)
+                if (n > max) max = n;
+
+            Console.WriteLine($"Максимальный элемент: {max}");
         }
         //static void CheckCancel(OrderStatus status)
         //{
