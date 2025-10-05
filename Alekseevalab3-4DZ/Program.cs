@@ -49,22 +49,29 @@
             //}
             //Console.WriteLine("YES");
             //9
-            Console.WriteLine("Добро пожаловать на стрельбище!");
-            Console.WriteLine("Введите 'Стоп', чтобы завершить стрельбу.");
+            //Console.WriteLine("Добро пожаловать на стрельбище!");
+            //Console.WriteLine("Введите 'Стоп', чтобы завершить стрельбу.");
 
-            int shots = 0;
+            //int shots = 0;
 
-            for (; ; )
-            {
-                Console.Write("Нажмите Enter для выстрела: ");
-                if (Console.ReadLine() == "Стоп") break;
+            //for (; ; )
+            //{
+            //    Console.Write("Нажмите Enter для выстрела: ");
+            //    if (Console.ReadLine() == "Стоп") break;
 
-                shots++;
-                Console.WriteLine("Выстрел совершен.");
-            }
+            //    shots++;
+            //    Console.WriteLine("Выстрел совершен.");
+            //}
 
-            Console.WriteLine("Стрельба завершена.");
-            Console.WriteLine($"Израсходовано боеприпасов: {shots}");
+            //Console.WriteLine("Стрельба завершена.");
+            //Console.WriteLine($"Израсходовано боеприпасов: {shots}");
+
+            //lab4
+            //1
+            string[] items = { "sword", "shield", "potion", "sword", "potion", "potion" };
+
+            foreach (string item in items)
+                Console.WriteLine(item);
         }
         //static void CheckCancel(OrderStatus status)
         //{
