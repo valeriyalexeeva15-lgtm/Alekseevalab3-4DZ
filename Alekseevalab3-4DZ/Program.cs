@@ -76,13 +76,21 @@
             //int[] points = { 10, 20, 15, 30, 25 };
             //Console.WriteLine($"Общее количество очков: {points.Sum()}");
             //3
-            int[] numbers = { 1, 3, 7, 2, 5 };
-            int max = numbers[0];
+            //int[] numbers = { 1, 3, 7, 2, 5 };
+            //int max = numbers[0];
+
+            //foreach (int n in numbers)
+            //    if (n > max) max = n;
+
+            //Console.WriteLine($"Максимальный элемент: {max}");
+            //4
+            int[] numbers = { 1, 2, 3, 4, 5 };
+            int even = 0, odd = 0;
 
             foreach (int n in numbers)
-                if (n > max) max = n;
+                if (n % 2 == 0) even++; else odd++;
 
-            Console.WriteLine($"Максимальный элемент: {max}");
+            Console.WriteLine($"{even} четных и {odd} нечетных");
         }
         //static void CheckCancel(OrderStatus status)
         //{
