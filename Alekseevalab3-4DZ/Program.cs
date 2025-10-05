@@ -68,10 +68,13 @@
 
             //lab4
             //1
-            string[] items = { "sword", "shield", "potion", "sword", "potion", "potion" };
+            //string[] items = { "sword", "shield", "potion", "sword", "potion", "potion" };
 
-            foreach (string item in items)
-                Console.WriteLine(item);
+            //foreach (string item in items)
+            //    Console.WriteLine(item);
+            //2
+            int[] points = { 10, 20, 15, 30, 25 };
+            Console.WriteLine($"Общее количество очков: {points.Sum()}");
         }
         //static void CheckCancel(OrderStatus status)
         //{
