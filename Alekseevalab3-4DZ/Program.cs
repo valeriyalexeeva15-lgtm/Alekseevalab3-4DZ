@@ -39,15 +39,32 @@
             //for (int i = 0; i < count; i++)
             //    Console.WriteLine(text);
             //8
-            for (int i = 0; i < 10; i++)
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    if (int.Parse(Console.ReadLine()) % 2 != 0)
+            //    {
+            //        Console.WriteLine("NO");
+            //        return;
+            //    }
+            //}
+            //Console.WriteLine("YES");
+            //9
+            Console.WriteLine("Добро пожаловать на стрельбище!");
+            Console.WriteLine("Введите 'Стоп', чтобы завершить стрельбу.");
+
+            int shots = 0;
+
+            for (; ; )
             {
-                if (int.Parse(Console.ReadLine()) % 2 != 0)
-                {
-                    Console.WriteLine("NO");
-                    return;
-                }
+                Console.Write("Нажмите Enter для выстрела: ");
+                if (Console.ReadLine() == "Стоп") break;
+
+                shots++;
+                Console.WriteLine("Выстрел совершен.");
             }
-            Console.WriteLine("YES");
+
+            Console.WriteLine("Стрельба завершена.");
+            Console.WriteLine($"Израсходовано боеприпасов: {shots}");
         }
         //static void CheckCancel(OrderStatus status)
         //{
