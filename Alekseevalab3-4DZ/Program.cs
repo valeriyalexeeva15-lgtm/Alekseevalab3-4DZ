@@ -118,15 +118,20 @@
 
             //Console.WriteLine($"Среднее количество очков: {sum / points.Length}");
             //8
-            List<string> inventory = new List<string> { "Меч", "Ласточка", "Бомба", "Зелье Гром", "Ласточка" };
+            //List<string> inventory = new List<string> { "Меч", "Ласточка", "Бомба", "Зелье Гром", "Ласточка" };
 
-            for (int i = 0; i < inventory.Count; i++)
-                if (inventory[i] == "Ласточка")
-                    inventory[i] = "Кошка";
+            //for (int i = 0; i < inventory.Count; i++)
+            //    if (inventory[i] == "Ласточка")
+            //        inventory[i] = "Кошка";
 
-            foreach (string item in inventory)
-                Console.WriteLine(item);
+            //foreach (string item in inventory)
+            //    Console.WriteLine(item);
+            //9
+            string[] companions = { "Garrus", "Tali", "Mordin", "Grunt", "Jack" };
+            string[] roles = { "Лидер команды", "Техник", "Биотик", "Солдат", "Поддержка" };
 
+            for (int i = 0; i < companions.Length; i++)
+                Console.WriteLine(roles[i] + ": " + companions[i]);
         }
             //static void CheckCancel(OrderStatus status)
             //{
