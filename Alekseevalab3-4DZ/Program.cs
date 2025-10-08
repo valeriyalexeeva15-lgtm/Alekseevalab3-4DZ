@@ -110,13 +110,23 @@
             //    Console.WriteLine($"{wins} победы и {losses} поражения");
             //}
             //7
-            int[] points = { 15, 20, 25, 30, 10 };
-            int sum = 0;
+            //int[] points = { 15, 20, 25, 30, 10 };
+            //int sum = 0;
 
-            foreach (int p in points)
-                sum += p;
+            //foreach (int p in points)
+            //    sum += p;
 
-            Console.WriteLine($"Среднее количество очков: {sum / points.Length}");
+            //Console.WriteLine($"Среднее количество очков: {sum / points.Length}");
+            //8
+            List<string> inventory = new List<string> { "Меч", "Ласточка", "Бомба", "Зелье Гром", "Ласточка" };
+
+            for (int i = 0; i < inventory.Count; i++)
+                if (inventory[i] == "Ласточка")
+                    inventory[i] = "Кошка";
+
+            foreach (string item in inventory)
+                Console.WriteLine(item);
+
         }
             //static void CheckCancel(OrderStatus status)
             //{
@@ -124,7 +134,10 @@
             //        Console.WriteLine($"Заказ со статусом {status} можно отменить");
             //    else
             //        Console.WriteLine($"Заказ со статусом {status} нельзя отменить");
-            //}
+            
+
+
+
 
         }
 }
