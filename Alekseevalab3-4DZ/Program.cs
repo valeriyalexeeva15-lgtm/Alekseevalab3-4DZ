@@ -101,13 +101,22 @@
 
             //Console.WriteLine($"Самое быстрое время: {min} секунд");
             //6
-            string[] results = { "win", "loss", "win", "win", "loss" };
-            int wins = 0, losses = 0;
+            //    string[] results = { "win", "loss", "win", "win", "loss" };
+            //    int wins = 0, losses = 0;
 
-            foreach (string result in results)
-                if (result == "win") wins++; else losses++;
+            //    foreach (string result in results)
+            //        if (result == "win") wins++; else losses++;
 
-            Console.WriteLine($"{wins} победы и {losses} поражения");
+            //    Console.WriteLine($"{wins} победы и {losses} поражения");
+            //}
+            //7
+            int[] points = { 15, 20, 25, 30, 10 };
+            int sum = 0;
+
+            foreach (int p in points)
+                sum += p;
+
+            Console.WriteLine($"Среднее количество очков: {sum / points.Length}");
         }
             //static void CheckCancel(OrderStatus status)
             //{
